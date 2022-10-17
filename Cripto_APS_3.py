@@ -1,4 +1,4 @@
-def cript () :
+def cript () : #função para criptografar
     criptografar = input('\nInsira a mensagem a ser CRIPTOGRAFADA:')
     mensagem = ''
 
@@ -9,21 +9,21 @@ def cript () :
 
     print('\nA mensagem criptografada é:' ,mensagem)
 
-def descript () :
+def descript () : #função para descriptografar
     descriptografar = input('\nInsira a mensagem a ser DESCRIPTOGRAFADA:')
-    mensagem = ''
+    mensagem = ''#Mensagem vazia 
     
-    listaD = list()
-    for i in range(0, len(descriptografar), 6):
-        listaD.append(descriptografar[i:i+6]) #Separa dentro de listaD todos os números inseridos em descriptografar de 6 em 6
-    
+    listaD = list() #Variavel que recebe uma lista
+    for i in range(0, len(descriptografar), 6): #cria um array iniciando em 0 e indo até o sexto augaritimo de descriptografar
+        listaD.append(descriptografar[i:i+6]) #insere dentro de listaD todos os números inseridos em descriptografar de 6 em 6 ['0123456', '0123456', '0123456'....]
+    print ('listaD',listaD)
     listaI = list()
     for i in range(0, len(listaD)):
         result = ''
         for j in listaD[i]:
             result = result + j
         listaI.insert(i, chr(int(int(result)/14)))
-    
+    print ('listaI', listaI)
     for i in listaI:
         mensagem = mensagem + i
     
