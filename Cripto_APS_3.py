@@ -15,7 +15,7 @@ def descript () : #função para descriptografar
     
     listaD = list() #Variavel que recebe uma lista
     for i in range(0, len(descriptografar), 6): #cria um array iniciando em 0 e indo até o sexto augaritimo de descriptografar
-        listaD.append(descriptografar[i:i+6]) #insere dentro de listaD todos os números inseridos em descriptografar de 6 em 6 ['0123456', '0123456', '0123456'....]
+        listaD.append(descriptografar[i:i+6]) #insere dentro de listaD todos os números inseridos em descriptografar de 6 em 6 ['0123456', '0123456', '0123456'...]
     print ('listaD',listaD)
     listaI = list()
     for i in range(0, len(listaD)):
