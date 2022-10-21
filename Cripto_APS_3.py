@@ -4,8 +4,8 @@ def cript () : #função para criptografar
 
     listaChr=[]
     for i in criptografar: #Cria uma lista com os algarimos inceridos na variavel 'criptografar'
-        listaChr.append(chr(ord(i)))
-        mensagem = mensagem + str(ord(i)*14).zfill(6)
+        listaChr.append(chr(ord(i))) #.append adiciona ao fim da lista
+        mensagem = mensagem + str(ord(i)*14).zfill(6) #.zfill adiciona a quantidade de 0 até atingir a quantidade desejável 
 
     print('\nA mensagem criptografada é:' ,mensagem)
 
@@ -29,8 +29,11 @@ def descript () : #função para descriptografar
     
     print('\nA mensagem descriptografada é:' , mensagem)
 
+#O CODIGO COMEÇA AQUI
+print('\nBem vindo ao SIC (Sistema de Interativo de Criptografia)!!!')
+
 while True:
-    print('\nBem vindo ao SIC (Sistema de Interativo de Criptografia)!!!')
+    
     print('Você deseja:')       
     print('\n1-Criptografar')
     print('\n2-Descriptografar')
