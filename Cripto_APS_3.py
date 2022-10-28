@@ -22,8 +22,8 @@ def descript () : #função para descriptografar
         result = ''
         for j in listaD[i]:
             result = result + j
-        listaI.insert(i, chr(int(result/14)))
-   
+        listaI.insert(i, chr(int(int(result)/14)))
+        
     for i in listaI:
         mensagem = mensagem + i
     
