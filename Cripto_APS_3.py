@@ -5,7 +5,7 @@ def cript () : #função para criptografar
     listaChr=[]
     for i in criptografar: #Cria uma lista com os algarimos inceridos na variavel 'criptografar'
         listaChr.append(chr(ord(i))) #.append adiciona ao fim da lista
-        mensagem = mensagem + str(ord(i)*14).zfill(6) #.zfill adiciona a quantidade de 0 até atingir a quantidade desejável 
+        mensagem = mensagem + str(ord(i)*14).zfill(4) #.zfill adiciona a quantidade de 0 até atingir a quantidade desejável 
 
     print('\nA mensagem criptografada é:' ,mensagem)
 
@@ -14,8 +14,8 @@ def descript () : #função para descriptografar
     mensagem = ''#Mensagem vazia 
     
     listaD = [] #Variavel que recebe uma lista
-    for i in range(0, len(descriptografar), 6): #cria um array iniciando em 0 e indo até o sexto augaritimo de descriptografar
-        listaD.append(descriptografar[i:i+6]) #insere dentro de listaD todos os números inseridos em descriptografar de 6 em 6 ['0123456', '0123456', '0123456'...]
+    for i in range(0, len(descriptografar), 4): #cria um array iniciando em 0 e indo até o sexto augaritimo de descriptografar
+        listaD.append(descriptografar[i:i+4]) #insere dentro de listaD todos os números inseridos em descriptografar de 6 em 6 ['0123456', '0123456', '0123456'...]
    
     listaI = []
     for i in range(0, len(listaD)):#lê a quantidade de itens na listaD iniciando do 0
